@@ -1,0 +1,17 @@
+---
+elastic_version: "8.12.2"
+zeek_image: "zeek/zeek:8.1"
+siem_ip: "10.10.0.10"
+sensor_ip: "10.10.0.20"
+web_waf_ip: "10.10.0.30"
+attacker_ip: "10.10.0.40"
+trainee_user: "user-access"
+# Set a SHA-512 password hash only when browser-console login is required.
+# Empty leaves key-based SSH as the participation route.
+trainee_password_hash: ""
+# Keep these addresses in sync with topology.yml and the supplied lab helpers.
+
+# Platform shell-command logging is separate from the exercise Filebeat telemetry.
+cadmus_enable_command_logging: true
+cadmus_command_log_port: 514
+cadmus_command_log_protocol: tcp
