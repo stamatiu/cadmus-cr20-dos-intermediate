@@ -6,9 +6,10 @@ sensor_ip: "10.10.0.20"
 web_waf_ip: "10.10.0.30"
 attacker_ip: "10.10.0.40"
 trainee_user: "user-access"
-# Set a SHA-512 password hash only when browser-console login is required.
-# Empty leaves key-based SSH as the participation route.
-trainee_password_hash: ""
+# Browser-console access for the instructor pilot.
+# Temporary lab password: CR20-Browser-2026!
+# Set your deployment password before releasing the course to trainees.
+trainee_password_hash: "$6$5CKI63MPefEcplwj$.7ORZuK9iwXXGKjR61UxcxMppcRiGE.zL7WOb/i.HjzjQFkrJuZvfXqxYNOuA86q0FGvxEcwTezrGqmHDsx360"
 # Keep these addresses in sync with topology.yml and the supplied lab helpers.
 
 # Platform shell-command logging is separate from the exercise Filebeat telemetry.
